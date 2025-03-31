@@ -63,13 +63,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for the portfolio
+				// Custom colors for the portfolio with dark theme additions
 				portfolio: {
 					black: '#222222',
 					grey: '#8E9196',
 					lightgrey: '#F1F1F1',
 					green: '#4CAF50',
 					red: '#ea384c',
+					dark: '#1A1F2C',
+					darkgrey: '#333333',
 				}
 			},
 			borderRadius: {

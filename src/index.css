@@ -46,11 +46,11 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 240 10% 3.9%;
     --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
+    --card: 240 10% 3.9%;
     --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
+    --popover: 240 10% 3.9%;
     --popover-foreground: 210 40% 98%;
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
@@ -82,7 +82,7 @@
   }
 
   body {
-    @apply bg-white text-portfolio-black;
+    @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
   }
   
@@ -109,11 +109,11 @@
   }
   
   .btn-outline {
-    @apply border-2 border-portfolio-black text-portfolio-black px-6 py-3 rounded-md font-medium hover:bg-portfolio-black hover:text-white transition-all;
+    @apply border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-portfolio-black transition-all dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-portfolio-black;
   }
   
   .nav-link {
-    @apply text-portfolio-black hover:text-portfolio-green transition-all relative;
+    @apply text-white hover:text-portfolio-green transition-all relative;
   }
   
   .nav-link::after {
