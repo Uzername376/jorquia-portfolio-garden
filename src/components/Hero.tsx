@@ -31,7 +31,7 @@ const Hero = () => {
               <div className="absolute -top-6 -left-6 w-full h-full border-2 border-portfolio-green rounded-full"></div>
               <div className="relative overflow-hidden rounded-full border-4 border-white shadow-xl">
                 <img 
-                  src="/lovable-uploads/9f59ba65-e403-4e3d-abda-579104416c53.png" 
+                  src="/lovable-uploads/e17fc7ec-6d59-4980-8b0f-04d64eb3ef6c.png" 
                   alt="Joaquin Jorquia" 
                   className="w-full h-full object-cover"
                 />
