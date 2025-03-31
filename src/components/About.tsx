@@ -9,6 +9,9 @@ const About = () => {
         <div className="text-center mb-16 animate-slide-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
           <div className="w-16 h-1 bg-portfolio-green mx-auto"></div>
+          <p className="text-portfolio-grey mt-6 max-w-2xl mx-auto">
+            Learn more about my background, skills, and passion for creating digital experiences.
+          </p>
         </div>
         
         <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -34,7 +37,7 @@ const About = () => {
               </div>
               <div className="flex items-center">
                 <MapPin size={20} className="text-portfolio-green mr-3" />
-                <span>San Francisco, CA</span>
+                <span>San Beda College Alabang</span>
               </div>
             </div>
             

@@ -39,8 +39,7 @@ const Skills = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Skills</h2>
           <div className="w-16 h-1 bg-portfolio-green mx-auto mb-6"></div>
           <p className="text-portfolio-grey max-w-2xl mx-auto">
-            I'm constantly expanding my skill set and keeping up with the latest technologies.
-            Here's a comprehensive look at my technical proficiency.
+            Technical expertise and proficiency in various design and development technologies and tools.
           </p>
         </div>
         

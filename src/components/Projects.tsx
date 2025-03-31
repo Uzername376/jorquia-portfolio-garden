@@ -37,8 +37,7 @@ const Projects = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Projects</h2>
           <div className="w-16 h-1 bg-portfolio-green mx-auto mb-6"></div>
           <p className="text-portfolio-grey max-w-2xl mx-auto">
-            Here are some of my recent projects. Each project reflects my passion for creating
-            user-friendly and visually appealing applications.
+            Explore my portfolio of web applications and design projects that showcase my skills and expertise.
           </p>
         </div>
         

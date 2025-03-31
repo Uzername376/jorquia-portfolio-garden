@@ -46,8 +46,7 @@ const Contact = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact Me</h2>
           <div className="w-16 h-1 bg-portfolio-green mx-auto mb-6"></div>
           <p className="text-portfolio-grey max-w-2xl mx-auto">
-            Have a project in mind or want to discuss a potential collaboration? 
-            Feel free to reach out to me through the form below or my contact information.
+            Get in touch for collaborations, project inquiries, or just to say hello. I'm always open to new opportunities.
           </p>
         </div>
         
@@ -91,7 +90,7 @@ const Contact = () => {
                   <div>
                     <h4 className="text-sm text-gray-300">Location</h4>
                     <p className="text-white">
-                      San Francisco, California
+                      San Beda College Alabang
                     </p>
                   </div>
                 </div>
