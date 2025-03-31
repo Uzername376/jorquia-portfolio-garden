@@ -31,19 +31,19 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrollPosition > 50 ? 'bg-portfolio-black shadow-md py-3' : 'py-5 bg-transparent'}`}>
-      <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-white">
-          J<span className="text-portfolio-green">.</span>Jorquia
+    <nav className={`navbar ${scrollPosition > 50 ? 'scrolled' : ''}`}>
+      <div className="container navbar-container">
+        <Link to="/" className="logo">
+          J<span>.</span>Jorquia
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="nav-menu-desktop">
           {navLinks.map((link, index) => (
             <a 
               key={index} 
               href={link.href} 
-              className="nav-link font-medium"
+              className="nav-link"
             >
               {link.title}
             </a>
@@ -57,25 +57,23 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center">
-          <button 
-            className="text-white focus:outline-none" 
-            onClick={toggleMenu}
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
+        <button 
+          className="mobile-toggle"
+          onClick={toggleMenu}
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-portfolio-black w-full border-t border-gray-800 animate-fade-in">
-          <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+        <div className="nav-menu active">
+          <div className="container nav-menu-mobile">
             {navLinks.map((link, index) => (
               <a 
                 key={index} 
                 href={link.href} 
-                className="nav-link text-lg py-2 font-medium"
+                className="nav-link"
                 onClick={toggleMenu}
               >
                 {link.title}
@@ -83,7 +81,7 @@ const Navbar = () => {
             ))}
             <a 
               href="#contact" 
-              className="btn-primary text-center"
+              className="btn-primary"
               onClick={toggleMenu}
             >
               Get In Touch

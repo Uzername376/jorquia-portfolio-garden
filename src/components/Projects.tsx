@@ -31,62 +31,55 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-white">
-      <div className="container mx-auto px-4 md:px-8">
-        <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Projects</h2>
-          <div className="w-16 h-1 bg-portfolio-green mx-auto mb-6"></div>
-          <p className="text-portfolio-grey max-w-2xl mx-auto">
+    <section id="projects" className="projects">
+      <div className="container">
+        <div className="section-header">
+          <h2 className="section-title">My Projects</h2>
+          <div className="section-divider"></div>
+          <p className="section-description">
             Explore my portfolio of web applications and design projects that showcase my skills and expertise.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="projects-grid">
           {projects.map((project, index) => (
-            <div 
-              key={index} 
-              className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="h-52 overflow-hidden">
+            <div key={index} className="project-card">
+              <div className="project-image-container">
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  className="project-image"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-portfolio-grey mb-4">
+              <div className="project-content">
+                <h3 className="project-title">{project.title}</h3>
+                <p className="project-description">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="project-tags">
                   {project.tags.map((tag, tagIndex) => (
-                    <span 
-                      key={tagIndex} 
-                      className="bg-portfolio-lightgrey text-portfolio-black text-sm px-3 py-1 rounded-full"
-                    >
+                    <span key={tagIndex} className="project-tag">
                       {tag}
                     </span>
                   ))}
                 </div>
-                <div className="flex justify-between">
+                <div className="project-links">
                   <a 
                     href={project.liveLink} 
-                    className="text-portfolio-green hover:text-portfolio-black flex items-center transition-colors"
+                    className="project-link"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <ExternalLink size={18} className="mr-1" />
+                    <ExternalLink size={18} className="project-link-icon" />
                     Live Demo
                   </a>
                   <a 
                     href={project.githubLink} 
-                    className="text-portfolio-green hover:text-portfolio-black flex items-center transition-colors"
+                    className="project-link"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Github size={18} className="mr-1" />
+                    <Github size={18} className="project-link-icon" />
                     Source Code
                   </a>
                 </div>
@@ -95,7 +88,7 @@ const Projects = () => {
           ))}
         </div>
         
-        <div className="text-center mt-12">
+        <div className="projects-button">
           <a href="#" className="btn-outline">
             View All Projects
           </a>

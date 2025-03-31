@@ -33,38 +33,33 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-portfolio-lightgrey">
-      <div className="container mx-auto px-4 md:px-8">
-        <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Skills</h2>
-          <div className="w-16 h-1 bg-portfolio-green mx-auto mb-6"></div>
-          <p className="text-portfolio-grey max-w-2xl mx-auto">
+    <section id="skills" className="skills">
+      <div className="container">
+        <div className="section-header">
+          <h2 className="section-title">My Skills</h2>
+          <div className="section-divider"></div>
+          <p className="section-description">
             Technical expertise and proficiency in various design and development technologies and tools.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="skills-grid">
           {skillCategories.map((category, categoryIndex) => (
-            <div 
-              key={categoryIndex} 
-              className="bg-white rounded-lg shadow-md p-8 animate-fade-in"
-              style={{ animationDelay: `${categoryIndex * 0.1}s` }}
-            >
-              <h3 className="text-xl font-bold mb-6 text-center relative">
-                <span className="relative z-10">{category.category}</span>
-                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-portfolio-green"></span>
+            <div key={categoryIndex} className="skill-category">
+              <h3 className="category-title">
+                <span>{category.category}</span>
               </h3>
               
-              <div className="space-y-6">
+              <div className="skills-list">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex}>
-                    <div className="flex justify-between mb-2">
-                      <span className="font-medium">{skill.name}</span>
-                      <span className="text-portfolio-grey">{skill.proficiency}%</span>
+                  <div key={skillIndex} className="skill-item">
+                    <div className="skill-header">
+                      <span className="skill-name">{skill.name}</span>
+                      <span className="skill-percentage">{skill.proficiency}%</span>
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2.5">
+                    <div className="skill-bar-bg">
                       <div 
-                        className="bg-portfolio-green h-2.5 rounded-full" 
+                        className="skill-bar-fill" 
                         style={{ width: `${skill.proficiency}%` }}
                       ></div>
                     </div>
