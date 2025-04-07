@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joaquin Jorquia - Profile</title>
+    <meta name="description" content="Joaquin Jorquia's Personal Profile - Likes, Dislikes, Hobbies and Skills" />
+    <meta name="author" content="Joaquin Jorquia" />
+
+    <meta property="og:title" content="Joaquin Jorquia - Profile" />
+    <meta property="og:description" content="Joaquin Jorquia's Personal Profile - Likes, Dislikes, Hobbies and Skills" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="index.html" class="logo">J<span>.</span>Jorquia</a>
+
+        <!-- Desktop Navigation -->
+        <div class="nav-menu-desktop">
+          <a href="index.html#home" class="nav-link">Home</a>
+          <a href="index.html#about" class="nav-link">About</a>
+          <a href="index.html#projects" class="nav-link">Projects</a>
+          <a href="index.html#skills" class="nav-link">Skills</a>
+          <a href="profile.html" class="nav-link active">Profile</a>
+          <a href="index.html#contact" class="nav-link">Contact</a>
+          <a href="index.html#contact" class="btn-primary">Get In Touch</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-toggle" id="mobileToggle">
+          <i class="fas fa-bars" id="menuIcon"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div class="nav-menu" id="mobileMenu">
+        <div class="container nav-menu-mobile">
+          <a href="index.html#home" class="nav-link">Home</a>
+          <a href="index.html#about" class="nav-link">About</a>
+          <a href="index.html#projects" class="nav-link">Projects</a>
+          <a href="index.html#skills" class="nav-link">Skills</a>
+          <a href="profile.html" class="nav-link active">Profile</a>
+          <a href="index.html#contact" class="nav-link">Contact</a>
+          <a href="index.html#contact" class="btn-primary">Get In Touch</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Hero Section -->
+    <section class="profile-hero">
+      <div class="container">
+        <div class="profile-header">
+          <div class="profile-image-large">
+            <img src="public/lovable-uploads/f87fe45c-ae2f-4794-98bb-93a037c8f9b2.png" alt="Joaquin Jorquia">
+          </div>
+          <div class="profile-intro">
+            <h1>Joaquin Jorquia</h1>
+            <p class="profile-tagline">Designer & Developer</p>
+            <div class="profile-social">
+              <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile Content Section -->
+    <section class="profile-content">
+      <div class="container">
+        <div class="profile-grid">
+          <!-- Likes Section -->
+          <div class="profile-card">
+            <div class="card-header">
+              <i class="fas fa-heart card-icon"></i>
+              <h2>Things I Like</h2>
+            </div>
+            <div class="card-content">
+              <ul class="profile-list">
+                <li><i class="fas fa-check"></i> Clean, minimalist design</li>
+                <li><i class="fas fa-check"></i> Problem-solving through code</li>
+                <li><i class="fas fa-check"></i> Learning new technologies</li>
+                <li><i class="fas fa-check"></i> Coffee (especially espresso)</li>
+                <li><i class="fas fa-check"></i> Science fiction books and movies</li>
+                <li><i class="fas fa-check"></i> Travel and exploring new cultures</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Dislikes Section -->
+          <div class="profile-card">
+            <div class="card-header">
+              <i class="fas fa-thumbs-down card-icon"></i>
+              <h2>Things I Dislike</h2>
+            </div>
+            <div class="card-content">
+              <ul class="profile-list">
+                <li><i class="fas fa-times"></i> Cluttered interfaces</li>
+                <li><i class="fas fa-times"></i> Poorly documented code</li>
+                <li><i class="fas fa-times"></i> Meetings that could be emails</li>
+                <li><i class="fas fa-times"></i> Slow loading websites</li>
+                <li><i class="fas fa-times"></i> Traffic jams</li>
+                <li><i class="fas fa-times"></i> Early morning appointments</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Hobbies Section -->
+          <div class="profile-card">
+            <div class="card-header">
+              <i class="fas fa-gamepad card-icon"></i>
+              <h2>My Hobbies</h2>
+            </div>
+            <div class="card-content">
+              <ul class="profile-list">
+                <li><i class="fas fa-circle"></i> Photography</li>
+                <li><i class="fas fa-circle"></i> Playing guitar</li>
+                <li><i class="fas fa-circle"></i> Hiking and outdoor adventures</li>
+                <li><i class="fas fa-circle"></i> Video games and game development</li>
+                <li><i class="fas fa-circle"></i> Reading tech blogs</li>
+                <li><i class="fas fa-circle"></i> Cooking and trying new recipes</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Detailed Skills Section -->
+          <div class="profile-card skills-card">
+            <div class="card-header">
+              <i class="fas fa-code card-icon"></i>
+              <h2>Detailed Skills</h2>
+            </div>
+            <div class="card-content">
+              <div class="detailed-skills">
+                <div class="skill-category">
+                  <h3>Front-end</h3>
+                  <div class="skill-tags">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                  </div>
+                </div>
+                
+                <div class="skill-category">
+                  <h3>Back-end</h3>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">Firebase</span>
+                    <span class="skill-tag">REST API</span>
+                  </div>
+                </div>
+                
+                <div class="skill-category">
+                  <h3>Design</h3>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Adobe XD</span>
+                    <span class="skill-tag">Photoshop</span>
+                    <span class="skill-tag">Illustrator</span>
+                    <span class="skill-tag">UI/UX</span>
+                    <span class="skill-tag">Wireframing</span>
+                  </div>
+                </div>
+                
+                <div class="skill-category">
+                  <h3>Other</h3>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">CI/CD</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Responsive Design</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div>
+          <h2 class="footer-logo">
+            J<span>.</span>Jorquia
+          </h2>
+          <p class="footer-tagline">
+            Designing and building digital experiences
+          </p>
+        </div>
+        
+        <div class="footer-nav">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="index.html#home" class="footer-link">Home</a>
+            <a href="index.html#about" class="footer-link">About</a>
+            <a href="index.html#projects" class="footer-link">Projects</a>
+            <a href="index.html#skills" class="footer-link">Skills</a>
+            <a href="profile.html" class="footer-link">Profile</a>
+            <a href="index.html#contact" class="footer-link">Contact</a>
+          </div>
+        </div>
+        
+        <div>
+          <h3>Connect With Me</h3>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="copyright">
+          <p>&copy; <span id="currentYear"></span> Joaquin Jorquia. All rights reserved.</p>
+        </div>
+      </div>
+      
+      <button 
+        class="scroll-top"
+        id="scrollTopBtn"
+        aria-label="Scroll to top"
+      >
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
